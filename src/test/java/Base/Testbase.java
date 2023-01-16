@@ -44,7 +44,7 @@ public class Testbase {
 	sdate = formatter.format(d);
 		
 		String s=ReadOR.getLocator("browser");
-		reports=new ExtentReports(System.getProperty("user.dir")+"\\src\\test\\resources\\reports\\AutomationReport"+sdate+".html");
+		reports=new ExtentReports(System.getProperty("user.dir")+"\\src\\test\\resources\\reports\\AutomationReport"+sdate+".html",true);
 		test=reports.startTest("Demo Register Report");
 		
 		if(s.equalsIgnoreCase("chrome"))

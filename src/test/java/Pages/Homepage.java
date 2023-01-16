@@ -49,7 +49,7 @@ public class Homepage extends Testbase {
 		driver.findElement(By.xpath("((//span[contains(text(),'RESULTS')])[1]//following::div//div[@class='a-row a-spacing-micro']//following-sibling::h2//a)[1]")).click();
 	tv_list[2]=driver.findElement(By.xpath("//span[@id='productTitle']")).getText();
 		driver.findElement(By.id("add-to-cart-button")).click();
-		check_box.click();
+		//check_box.click();
 		return tv_list;
 	}
 	

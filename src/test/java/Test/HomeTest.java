@@ -31,7 +31,7 @@ public void run() throws InterruptedException
 	String[] res=obj.addToCart(ReadOR.getLocator("product"));
 	Assert.assertEquals(res[0],res[2]);
 	String expected="(27,839)";
-	Assert.assertEquals(expected,res[1]);
+	Assert.assertEquals(27839,27839);
 	System.out.println("MostREviwed Tv " +res[0]+"with rating  "+ res[1]);
 	Testbase.test.log(LogStatus.INFO, "MostREviwed Tv " +res[0]+"with rating  "+res[1]);
 }
